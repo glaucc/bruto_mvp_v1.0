@@ -37,8 +37,8 @@ const PayByRazorPay = ({ amount, handleClose, courseId }) => {
   const activeUser = useSelector((state) => state.auth.user);
 
   const openPayModal = async () => {
-    const rzp1 = await new window.Razorpay(options);
-    rzp1.open();
+    // const rzp1 = await new window.Razorpay(options);
+    // rzp1.open();
     const enrolledCourses = [...activeUser.enrolled_courses, courseId];
     console.log(enrolledCourses);
     const payload = {

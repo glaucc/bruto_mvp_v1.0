@@ -154,7 +154,7 @@ const CourseBanner = ({ course }) => {
               <Grid container style={{ marginTop: '20px' }}>
                 <Grid item>
                   <strong>
-                    {Math.ceil(Math.random() * (8500 - 5500) + 5500)}
+                    {Math.ceil(Math.random() * (850 - 550) + 550)}
                   </strong>
                   &nbsp; Already Enrolled
                 </Grid>

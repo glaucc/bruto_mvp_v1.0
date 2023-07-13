@@ -37,7 +37,7 @@ const PaymentModal = ({ handleClose, courseId }) => {
       <h1>Are you sure, you want to purchase this Course?</h1>
       <Buttons>
         <PayByRazorPay
-          amount={500}
+          amount={0}
           handleClose={handleClose}
           courseId={courseId}
         />
