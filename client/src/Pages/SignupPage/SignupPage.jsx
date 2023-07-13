@@ -3,6 +3,9 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import styled from 'styled-components';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+import Navbar from '../../Shared-Components/Navbar';
+
 
 const FormBox = styled.div`
   display: flex;
@@ -56,6 +59,7 @@ const SignupPage = () => {
 
   return (
     <div>
+      <Navbar />
       <FormBox>
         <h1>Sign up Page</h1>
         <TextField
@@ -94,9 +98,12 @@ const SignupPage = () => {
           value={formdata.password}
           type="password"
         />
-        <Button onClick={handleSignup} variant="contained" color="primary">
-          Create my Account!
-        </Button>
+        <Link to='/'>
+        
+          <Button onClick={handleSignup} variant="contained" color="primary">
+            Create my Account!
+          </Button>
+        </Link>
       </FormBox>
     </div>
   );

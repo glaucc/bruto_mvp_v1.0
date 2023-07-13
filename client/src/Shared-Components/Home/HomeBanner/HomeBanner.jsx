@@ -1,9 +1,16 @@
 import React from 'react';
 import { Container, Grid, Button, Hidden, Box } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 import useStyles from './styles';
 
 export const HomeBanner = () => {
   const classes = useStyles();
+  
+  const history = useHistory();
+  const handleJoin = () => {
+    history.push('/signup');
+  };
+
   return (
     <div className={classes.root}>
       <Container>
@@ -39,8 +46,9 @@ export const HomeBanner = () => {
               <Button
                 variant="contained"
                 className={`${classes.heroBtn} ${classes.mediumHeroBtn}`}
+                onClick={handleJoin}
               >
-                Join For Free
+                Join NOW
               </Button>
             </Grid>
           </Grid>
